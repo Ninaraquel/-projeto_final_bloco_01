@@ -2,16 +2,21 @@ package loja;
 
 import java.util.Scanner;
 
+import loja.model.Celular;
+import loja.model.LojaEletronicos;
 import loja.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
+		
+		LojaEletronicos loja = new Celular(101, "Galaxy S21", "Samsung", 2500.00);
+		loja.exibirDetalhes();
 
 		Scanner leia = new Scanner(System.in);
 
 		int opcao, codigo;
-		float preco;
+		double preco;
 		String nomeProduto;
 
 		while (true) {
@@ -51,7 +56,7 @@ public class Menu {
 				codigo = leia.nextInt();
 
 				System.out.println("Digite o preço do produto: ");
-				preco = leia.nextFloat();
+				preco = leia.nextDouble();
 				break;
 			case 2:
 				System.out.println(Cores.TEXT_WHITE + "Listar todos os produtos\n");
