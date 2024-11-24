@@ -141,8 +141,7 @@ public class Menu {
 				break;
 
 			}
-			
-			leia.close();
+				
 		}
 	}
 

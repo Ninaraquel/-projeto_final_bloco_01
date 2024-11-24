@@ -7,6 +7,7 @@ import loja.repository.ProdutoRepository;
 
 public class ProdutoController implements ProdutoRepository {
 
+
 	private ArrayList<Produto> listaProdutos = new ArrayList<Produto>();
 	int codigo;
 
